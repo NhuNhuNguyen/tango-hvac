@@ -43,7 +43,7 @@ const SERVICES: Service[] = [
   {
     title: "Tankless Water Heater",
     description: "Endless hot water with energy-efficient upgrades and reliable servicing.",
-    imageSrc: "/hot-water-tank.JPG",
+    imageSrc: "/hot-water-tank.jpg",
     imageAlt: "Hot water equipment",
   },
 ] as const;
