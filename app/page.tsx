@@ -31,19 +31,19 @@ const SERVICES: Service[] = [
   {
     title: "Furnace",
     description: "Installation, repair, and seasonal tune-ups to keep your home warm and efficient.",
-    imageSrc: "/furnace-indoor.jpg",
+    imageSrc: "/furnace-indoor.JPG",
     imageAlt: "Indoor furnace equipment",
   },
   {
     title: "AC",
     description: "Cooling solutions, maintenance, and fast troubleshooting for the hottest days.",
-    imageSrc: "/ac-unit.jpg",
+    imageSrc: "/ac-unit.JPG",
     imageAlt: "Outdoor air conditioner unit",
   },
   {
     title: "Tankless Water Heater",
     description: "Endless hot water with energy-efficient upgrades and reliable servicing.",
-    imageSrc: "/hot-water-tank.jpg",
+    imageSrc: "/hot-water-tank.JPG",
     imageAlt: "Hot water equipment",
   },
 ] as const;
@@ -145,6 +145,7 @@ export default function Home() {
                   alt="HVAC technician working"
                   fill
                   priority
+                  unoptimized
                   className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -175,6 +176,7 @@ export default function Home() {
                   src={service.imageSrc}
                   alt={service.imageAlt}
                   fill
+                  unoptimized
                   className="object-cover transition duration-300 group-hover:scale-[1.03]"
                   sizes="(max-width: 1024px) 100vw, 33vw"
                 />
@@ -218,9 +220,10 @@ export default function Home() {
             <div className="lg:col-span-7">
               <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-white/10">
                 <Image
-                  src="/lennox-unit.jpg"
+                  src="/lennox-unit.JPG"
                   alt="Lennox HVAC equipment"
                   fill
+                  unoptimized
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                 />
